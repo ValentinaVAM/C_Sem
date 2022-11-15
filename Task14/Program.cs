@@ -15,5 +15,5 @@ bool MultiplicityTwoDigits (int num)
 
 bool result = MultiplicityTwoDigits (number);
 
-string resultStr = result ? "Да" : "Нет";
-Console.WriteLine($"{number} -> {resultStr}");
+Console.Write($"{number} - > ");
+Console.Write(result ? "Да" : "Нет");
