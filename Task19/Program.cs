@@ -7,15 +7,17 @@
 
 Console.WriteLine("Введите пятизначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
-
-bool Palindrom(int num)
+if(number > 9999 && number < 100000)
 {
-    int num1 = num / 10000;
-    int num2 = num % 10;
-    int num3 = num / 1000 % 10;
-    int num4 = num / 10 % 10;
-    return num1 == num2 && num3 == num4;
+    bool Palindrom(int num)
+    {
+        int num1 = num / 10000;
+        int num2 = num % 10;
+        int num3 = num / 1000 % 10;
+        int num4 = num / 10 % 10;
+        return num1 == num2 && num3 == num4;
+    }
+    bool result = Palindrom(number);
+    Console.WriteLine(result ? "Да, является палиндромом" : "Не является палиндромом");
 }
-
-bool result = Palindrom(number);
-Console.WriteLine(result ? "Да, является палиндромом" : "Не является палиндромом");
+else Console.WriteLine("Число не является пятизначным");
