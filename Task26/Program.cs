@@ -15,7 +15,7 @@ int NumberDigit(int num)
         num = num / 10;
         digit++;
     }
-    return digit;
+    return digit == 0 ? 1 : digit;
 }
 int digitNumber = NumberDigit(number);
-Console.WriteLine($"{number} -> {NumberDigit(number)}");
+Console.WriteLine($"{number} -> {digitNumber}");
