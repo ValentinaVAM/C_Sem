@@ -10,13 +10,13 @@ int number = Convert.ToInt32(Console.ReadLine());
 int Factorial(int num)
 {
     int fact = 1;
-    for(int i = 1; i <= num; i++)
+    for (int i = 1; i <= num; i++)
     {
         fact *= i;
     }
     return fact;
 }
-if(number > 0)
+if (number > 0)
 {
     int factorial = Factorial(number);
     Console.WriteLine($"Произведение чисел от 1 до {number} = {factorial}");
