@@ -21,7 +21,6 @@ if (number2 > 0)
 {
     int res = Exponentiation(number1, number2);
 
-    if(number1 < 0) Console.WriteLine($"Ответ: - {res}");
-    else Console.WriteLine($"Ответ: {res}");
+    Console.WriteLine($"Ответ: {res}");
 }
 else Console.WriteLine("Второе число введите натуральное");
