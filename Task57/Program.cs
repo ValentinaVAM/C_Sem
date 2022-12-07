@@ -39,7 +39,7 @@ int[] ReverceMatrixToArray(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            arr[y] = matrix[i, j];
+            arr[k] = matrix[i, j];
             k++;
         }
     }
