@@ -44,10 +44,11 @@ int TranslationInt(string index)
 
 
 int rows = TranslationInt("Введите индекс строки: ");
-int colums = TranslationInt("Введите индекс столбца: ");
+int columns = TranslationInt("Введите индекс столбца: ");
 int[,] array = CreateMatrixRndInt(4, 4, 1, 10);
 PrintMatrix(array);
 Console.WriteLine();
-if (rows < array.GetLength(0) && colums < array.GetLength(1)) Console.WriteLine(array[rows, colums]);
-else Console.WriteLine($"{rows}, {colums} --> Такого элемента нет в массиве");
+if (rows < 0 || rows > array.GetLength(0) || columns < 0 || columns > array.GetLength(1)) 
+Console.WriteLine($"{rows}, {columns} --> Такого элемента нет в массиве");
+else Console.WriteLine(array[rows, columns]);
 
