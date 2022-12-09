@@ -11,7 +11,11 @@ NaturalNumbers(number);
 
 void NaturalNumbers(int num)
 {
-    if (num == 0) return;        //или можно так if (num > 0)
-    NaturalNumbers (num - 1);    //{ Console.Write($"{num} "); 
-    Console.Write($"{num} ");    // NaturalNumbers (num - 1); }
+    if (num == 0) return;        
+    NaturalNumbers (num - 1);     
+    Console.Write($"{num} ");    
 }
+
+//или можно так if (num > 0)
+//{ Console.Write($"{num} ");
+// NaturalNumbers (num - 1); }
