@@ -35,7 +35,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int[] SumIndex (int[,] matrix)
+int[] SumLine (int[,] matrix)
 {
     int[] sum = new int[matrix.GetLength(0)];
     int count = 0;
@@ -51,7 +51,7 @@ int[] SumIndex (int[,] matrix)
     return sum;
 }
 
-int GetMinSum(int[] array)
+int GetIndexMinSum(int[] array)
 {
     int index = 1;
     int minSum = array[0];
@@ -70,6 +70,6 @@ int GetMinSum(int[] array)
 int[,] array = CreateMatrixRndInt(3, 4, 1, 10);
 PrintMatrix(array);
 Console.WriteLine();
-int[] result = SumIndex(array);
-int res = GetMinSum(result);
-Console.WriteLine($"Строкa с наименьшей суммой элементов: {res} ");
+int[] result = SumLine(array);
+int res = GetIndexMinSum(result);
+Console.WriteLine($"Строкa с наименьшей суммой элементов: {res} строка");
