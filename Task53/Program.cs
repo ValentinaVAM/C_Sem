@@ -5,7 +5,7 @@
 
 int[,] CreateMatrixRndInt (int rows, int columns, int min, int max)
 {
-    int[,] matrix = new int[rows, columns]; // 0, 1
+    int[,] matrix = new int[rows, columns]; 
     Random rnd = new Random();
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
