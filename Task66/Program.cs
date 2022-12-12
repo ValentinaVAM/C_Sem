@@ -2,9 +2,9 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-Console.WriteLine("Введите m: ");
+Console.WriteLine("Введите число m: ");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите n: ");
+Console.WriteLine("Введите число n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 int SumNumbers(int num1, int num2)
